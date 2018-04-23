@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="T258870.View.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:ViewModel="clr-namespace:T258870.ViewModel"
+    xmlns:Service="clr-namespace:T258870.Service"
+    mc:Ignorable="d"
+    DataContext="{dxmvvm:ViewModelSource Type=ViewModel:MainViewModel}" Height="289" Width="265">
+
+    <dxmvvm:Interaction.Behaviors>
+        <dx:DXMessageBoxService />
+        <dxmvvm:SaveFileDialogService />
+        <Service:ReportViewerService />
+    </dxmvvm:Interaction.Behaviors>
+
+    <StackPanel>
+        <ListBox Height="227" ItemsSource="{Binding ReportObjectCollection}" SelectedItem="{Binding SelectedReportObject}"/>
+        <Button Content="Preview..." Command="{Binding PreviewCommand}" />
+        <Button Content="Export..." Command="{Binding ExportCommand}" />
+    </StackPanel>
+</UserControl>
