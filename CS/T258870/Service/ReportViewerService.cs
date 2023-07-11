@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using DevExpress.Mvvm.UI;
 using DevExpress.ReportServer.Printing;
 using DevExpress.ReportServer.ServiceModel.ConnectionProviders;

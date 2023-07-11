@@ -1,4 +1,4 @@
-﻿
+
 namespace T258870.ViewModel {
     public class ReportObjects {
         public string DisplayName { get; set; }

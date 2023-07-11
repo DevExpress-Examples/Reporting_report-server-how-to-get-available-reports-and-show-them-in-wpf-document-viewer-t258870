@@ -1,4 +1,4 @@
-﻿Imports System.Windows
+Imports System.Windows
 Imports DevExpress.Mvvm.UI
 Imports DevExpress.ReportServer.Printing
 Imports DevExpress.ReportServer.ServiceModel.ConnectionProviders

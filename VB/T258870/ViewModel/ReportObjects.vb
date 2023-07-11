@@ -1,4 +1,4 @@
-﻿Namespace T258870.ViewModel
+Namespace T258870.ViewModel
     Public Class ReportObjects
         Public Property DisplayName() As String
         Public Property Id() As Integer
