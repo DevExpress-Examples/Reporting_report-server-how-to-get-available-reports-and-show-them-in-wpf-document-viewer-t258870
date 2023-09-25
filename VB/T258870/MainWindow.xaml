@@ -1,9 +1,0 @@
-﻿<Window x:Class="T258870.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:view="clr-namespace:T258870.View"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <view:MainView />
-    </Grid>
-</Window>
